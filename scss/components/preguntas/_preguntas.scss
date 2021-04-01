@@ -1,0 +1,83 @@
+/* CSS de Preguntas Frecuentes */
+
+.titulo-preguntas {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: $rojooscuro;
+    line-height: 3.6rem;
+    text-align: left;
+}
+
+.hr-preg {
+    width: 75%;
+    border: 0;
+    height: 0.9px;
+    opacity: 0.2;
+    color: $oscuro;
+    box-shadow: 1.5px 1.5px 1.5px $oscuro;
+}
+
+@media (min-width: 650px) and (max-width: 768px) {
+    .hr-preg {
+        width: 90%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .hr-preg {
+        width: 85%;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1440px) {
+    .hr-preg {
+        width: 80%;
+    }
+}
+
+@media (min-width: 1440px) {
+    .hr-preg {
+        width: 75%;
+    }
+}
+
+.cont-preguntas {
+    margin-top: 0.8rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cont-preguntas {
+    width: 75%;
+}
+
+@media (min-width: 650px) and (max-width: 768px) {
+    .cont-preguntas {
+        width: 90%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .cont-preguntas {
+        width: 85%;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1440px) {
+    .cont-preguntas {
+        width: 80%;
+    }
+}
+
+@media (min-width: 1440px) {
+    .cont-preguntas {
+        width: 75%;
+    }
+}
+
+@media (max-width: 1440px) {
+    .titulo-preguntas {
+        transform: scale(0.9);
+    }
+}

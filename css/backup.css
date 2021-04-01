@@ -1,0 +1,575 @@
+/* CSS1 por defecto de html*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CSS Genéricos */
+
+body {
+    width: 100%;
+    /* font-family: 'Noto Sans JP', sans-serif; */
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 300;
+    /* font-family: 'Mulish', sans-serif; */
+    /* font-family: 'Asap', sans-serif; */
+    /* font-family: 'Roboto', sans-serif; */
+    position: absolute;
+    top: 3.48rem;
+    background-color: var(--blanco);
+}
+
+:root {
+    --semiblanco: #FBFCFC;
+    --blanco: #F7F9F9;
+    --grisclaro: #E5E7E9;
+    --gristenue: #D7DBDD;
+    --oscuro: #1B2631;
+    --azuloscuro: #003366;
+    --azulprimario: #006699;
+    --azulsecundario: #0074bd;
+    --parrafo: #4b4b4b;
+    --verde: #006666;
+    --dorado: #FFCC00;
+    --doradooscuro: #D4AC0D;
+
+    --rojo: #d7292b;
+    --rojooscuro: #CB4335;
+}
+
+section div.textoproductos {
+    display: inline;
+}
+
+h1 {
+    width: 62.5%;
+    font-size: 1.8rem;
+    font-weight: 600;
+    font-style: normal;
+    color: var(--azulprimario);
+    letter-spacing: 1.5px;
+    margin: 1.3rem auto;
+    text-align: center;
+    text-decoration: wavy;
+    word-spacing: 0.3rem;
+    text-shadow: 0 0 1.4px var(--oscuro);
+}
+
+@media (max-width: 1529px) {
+    .titulo-index {
+        font-size: 1.62rem;
+    }
+}
+
+@media (max-width: 1149px) {
+    .titulo-index {
+        font-size: 1.44rem;
+    }
+}
+
+/* ---------------------------------------------------------------------------------------------New Bootstrap Slider */
+
+.prev-img {
+    width: 3.5rem;
+    height: 3.5rem;
+    position: absolute;
+    left: 5%;
+}
+
+.next-img {
+    width: 3.5rem;
+    height: 3.5rem;
+    position: absolute;
+    right: 5%;
+}
+
+@media (min-width: 1200px) and (max-width: 1440px) {
+    .prev-img, .next-img {
+        width: 2.8rem;
+        height: 2.8rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .prev-img, .next-img {
+        width: 2.3rem;
+        height: 2.3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .prev-img, .next-img {
+        display: none;
+    }
+}
+
+/* ---------------------------------------------------------------------------------------------New Bootstrap Slider */
+
+.cont-hr {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+}
+
+.texto_parrafo {
+    font-size: 0.95rem;
+    color: var(--parrafo);
+    opacity: 0.9;
+}
+
+@media (max-width: 1440px) {
+    .texto_parrafo {
+        transform: scale(0.95);
+    }
+}
+
+/* CSS de Navegacion */
+
+
+.cont-nav-principal {
+    width: 100%;
+    height: 3.48rem;
+    background-image: radial-gradient(circle at center center, rgba(255,255,255, 0),rgb(1,46,107)),repeating-linear-gradient(405deg, rgb(1,46,107) 0px, rgb(1,46,107) 1px,transparent 1px, transparent 4px),repeating-linear-gradient(315deg, rgb(10,64,101) 0px, rgb(10,64,101) 5px,transparent 5px, transparent 6px),linear-gradient(360deg, rgb(1,46,107),rgb(1,46,107));
+}
+
+@media (min-width: 480px) {
+    .cont-nav-principal a , .carro {
+        transform: scale(0.8);
+    }
+}
+
+@media (min-width: 700px) {
+    .cont-nav-principal a , .carro {
+        transform: scale(0.85);
+        padding: 0.15rem;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1529px) {
+    .cont-nav-principal a, .carro {
+        transform: scale(0.88);
+        padding: 0.5rem;
+    }
+}
+
+@media (min-width: 1530px) {
+    .cont-nav-principal a, .carro {
+        transform: scale(1);
+    }
+}
+
+.cont-nav {
+    width: 70%;
+}
+
+@media (min-width: 650px) and (max-width: 768px) {
+    .cont-nav {
+        width: 85%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .cont-nav {
+        width: 80%;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1440px) {
+    .cont-nav {
+        width: 75%;
+    }
+}
+
+@media (min-width: 1440px) {
+    .cont-nav {
+        width: 70%;
+    }
+}
+
+.cont-nav-principal a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-weight: 700;
+    margin: auto 1rem;
+    transition: all 0.15s linear;
+}
+
+.cont-nav-principal a:hover {
+    color: var(--dorado);
+    text-shadow: 0 0 2px var(--azuloscuro);
+}
+
+.carro {
+    z-index: 1;
+    position: absolute;
+    right: 2%;
+    margin: auto 0;
+}
+
+@media (min-width: 700px) and (max-width: 1200px) {
+    .carro {
+        right: 0;
+    }
+}
+
+/* CSS del Index */
+
+/* Titulo Index */
+
+.titulo-index {
+    transition: all 0.10s linear;
+}
+
+.titulo-index:hover {
+    transform: scale(1.025);
+    color: var(--azuloscuro);
+}
+
+/* Hr Index */
+
+.hr-index {
+    width: 70%;
+    border: 0;
+    height: 0.9px;
+    opacity: 0.2;
+    color: var(--oscuro);
+    box-shadow: 1.5px 1.5px 1.5px var(--oscuro);
+}
+
+@media (min-width: 650px) and (max-width: 768px) {
+    .hr-index {
+        width: 85%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .hr-index {
+        width: 80%;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1440px) {
+    .hr-index {
+        width: 85%;
+    }
+}
+
+@media (min-width: 1440px) {
+    .hr-index {
+        width: 70%;
+    }
+}
+
+/* Productos */
+
+.productos {
+    width: 62.5%;
+    margin: 0 auto;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+} 
+
+@media (min-width: 576px) {
+    .productos {
+        grid-template-columns: auto auto;
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .productos {
+        grid-template-columns: auto auto auto;
+        width: 100%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .productos {
+        grid-template-columns: auto auto auto auto;
+        width: 85%;
+    }
+}
+
+@media (min-width: 1440px) {
+    .productos {
+        grid-template-columns: auto auto auto auto auto;
+    }
+}
+
+.div_productos {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+    width: 13rem;
+    height: 19.4rem;
+    margin: .5rem 1rem 1rem 1rem;
+    padding: 0.5rem;
+    border-radius: 0.33rem;
+}
+
+.div_productos:hover {
+    background-color: var(--grisclaro); 
+    border-color: var(--azuloscuro);
+    box-shadow: 
+        0 2px 4px 0 rgba(0,0,0,.25),
+        0 1px 2px 0 rgba(0,0,0,.3),
+        0 .5px 1px 0 rgba(0,0,0,.35);
+    border-radius: 0.15rem;
+    transition: all 0.15s linear;
+    transform: scale(1.035);
+}
+
+.textoproductos {
+    margin: auto;
+    padding: auto 0;
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-align: center;
+    align-content: center;
+    transition: all 0.1s linear;
+}
+
+.textoprecio {
+    padding: auto;
+    font-size: 0.9rem;
+    color: var(--rojo);
+    text-align: center;
+    align-content: center;
+    font-weight: 700;
+}
+
+.textoproductos:hover {
+    color: var(--azulprimario);
+    text-shadow: 0.1px 0.1px 0.2px var(--azuloscuro);
+}
+
+.img-cont {
+    border-radius: 0.25rem;
+    box-shadow: 
+        0 2px 4px 0 rgba(0,0,0,.24),
+        0 1px 2px 0 rgba(0,0,0,.28),
+        0 .5px 1px 0 rgba(0,0,0,.32);
+}
+
+/* CSS de Preguntas Frecuentes */
+
+.titulo-preguntas {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--rojooscuro);
+    line-height: 3.6rem;
+    text-align: left;
+}
+
+.hr-preg {
+    width: 75%;
+    border: 0;
+    height: 0.9px;
+    opacity: 0.2;
+    color: var(--oscuro);
+    box-shadow: 1.5px 1.5px 1.5px var(--oscuro);
+}
+
+@media (min-width: 650px) and (max-width: 768px) {
+    .hr-preg {
+        width: 90%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .hr-preg {
+        width: 85%;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1440px) {
+    .hr-preg {
+        width: 80%;
+    }
+}
+
+@media (min-width: 1440px) {
+    .hr-preg {
+        width: 75%;
+    }
+}
+
+.cont-preguntas {
+    margin-top: 0.8rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cont-preguntas {
+    width: 75%;
+}
+
+@media (min-width: 650px) and (max-width: 768px) {
+    .cont-preguntas {
+        width: 90%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .cont-preguntas {
+        width: 85%;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1440px) {
+    .cont-preguntas {
+        width: 80%;
+    }
+}
+
+@media (min-width: 1440px) {
+    .cont-preguntas {
+        width: 75%;
+    }
+}
+
+@media (max-width: 1440px) {
+    .titulo-preguntas {
+        transform: scale(0.9);
+    }
+}
+
+/* CSS de Nosotros */
+
+.img_nosotros {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* CSS de Contacto */
+
+.cont-contacto {
+    width: 100%;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario {
+    background-color: var(--grisclaro);
+    width: 62.5%;
+    margin: 0 auto 2rem auto;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 
+        0 2px 4px 0 rgba(0,0,0,.28),
+        0 1px 2px 0 rgba(0,0,0,.32),
+        0 .5px 1px 0 rgba(0,0,0,.36);
+}
+
+.formulario fieldset {
+    border: none;
+}
+
+.formulario legend {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+    color: var(--parrafo);
+    letter-spacing: 0.04rem;
+}
+
+@media (max-width: 1529px) {
+    .formulario legend {
+        transform: scale(0.92);
+    }
+}
+
+@media (max-width: 1149px) {
+    .formulario legend {
+        transform: scale(0.84);
+    }
+}
+
+/* CSS del Footer */
+
+footer {
+    width: 100%;
+    background-image: radial-gradient(circle at center center, rgba(255,255,255, 0),rgb(1,46,107)),repeating-linear-gradient(405deg, rgb(1,46,107) 0px, rgb(1,46,107) 1px,transparent 1px, transparent 4px),repeating-linear-gradient(315deg, rgb(10,64,101) 0px, rgb(10,64,101) 5px,transparent 5px, transparent 6px),linear-gradient(360deg, rgb(1,46,107),rgb(1,46,107));
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.parrafo-footer {
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: var(--blanco);
+}
+
+.map {
+    margin-top: 1.4rem;
+    border-radius: 0.35rem;
+    box-shadow: 
+        0 4px 8px 0 rgba(0,0,0,.2),
+        0 2px 4px 0 rgba(0,0,0,.24),
+        0 1px 2px 0 rgba(0,0,0,.28);
+}
+
+/* CSS de Redes Sociales */
+
+.redes-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.mov-red-wapp, .mov-red-fb, .mov-red-ins {
+    transition: all 0.85s linear;
+}
+
+.mov-red-wapp:hover {
+    position: relative;
+    bottom: 0.3rem;
+    right: 0.3rem;
+}
+
+.mov-red-fb:hover {
+    position: relative;
+    bottom: 0.3rem;
+}
+
+.mov-red-ins:hover {
+    position: relative;
+    bottom: 0.3rem;
+    left: 0.3rem;
+}
+
+    /* Nav del Footer */
+
+.cont-nav-footer {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.nav-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-footer a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-weight: 300;
+    padding: 0.8rem;
+    transition: all 0.15s linear;
+}
+
+.nav-footer a:hover {
+    color: var(--dorado);
+    text-shadow: 0 0 2px var(--azuloscuro);
+}

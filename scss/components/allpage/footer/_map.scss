@@ -1,0 +1,7 @@
+/* CSS del Mapa */
+
+.map {
+    margin-top: 1.4rem;
+    border-radius: 0.35rem;
+    @extend %sombra-tenue;
+}

@@ -1,0 +1,110 @@
+/* CSS de Contacto */
+
+.cont-contacto {
+    width: 100%;
+}
+
+.formulario {
+    background-image: repeating-linear-gradient(67.5deg, rgba(249,248,248, 0.2) 0px, rgba(249,248,248, 0.2) 0px,transparent 0px, transparent 1px,rgba(249,248,248, 0.2) 1px, rgba(249,248,248, 0.2) 4px,transparent 4px, transparent 5px,rgba(249,248,248, 0.2) 5px, rgba(249,248,248, 0.2) 8px),repeating-linear-gradient(0deg, rgba(249,248,248, 0.2) 0px, rgba(249,248,248, 0.2) 0px,transparent 0px, transparent 1px,rgba(249,248,248, 0.2) 1px, rgba(249,248,248, 0.2) 4px,transparent 4px, transparent 5px,rgba(249,248,248, 0.2) 5px, rgba(249,248,248, 0.2) 8px),linear-gradient(135deg, rgb(215,219,221),rgb(215,219,221));
+    margin: 0 16% 2rem 16%;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    @extend %sombra-normal;
+
+        @media (max-width: 1200px) {
+            margin: 0 12% 2rem 12%;
+        }
+
+        @media (max-width: 992px) {
+            margin: 0 4% 2rem 4%;
+        }
+}
+
+.formulario legend {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 1.2rem;
+    color: $oscuro;
+    letter-spacing: 0.04rem;
+
+        @media (max-width: 992px) {
+            transform: scale(0.92);
+        }
+
+        @media (max-width: 1200px) {
+            transform: scale(0.95);
+        }
+}
+
+.formulario fieldset {
+    border: none;
+    @extend %grid-center;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1.5rem;
+
+}
+
+.campo {
+    margin-bottom: 1rem;
+}
+
+.campo label {
+    margin-bottom: .5rem;
+    font-weight: bold;
+    color: $rojooscuro;
+}
+
+.campo legend {
+    color: $semiblanco;
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display: block;   
+}
+
+.campo .form-input {
+   width: 100%;
+   border: none;
+   padding: 1.5rem;
+   border-radius: .5rem;
+   @extend %sombra-muytenue;
+}
+
+.campo:nth-child(5) {
+    grid-column: 1 / 3;
+}
+
+.campo textarea {
+    width: 100%;
+    height: 20rem;
+    border: none;
+    padding: 1.5rem;
+    border-radius: .5rem;
+    @extend %sombra-muytenue;
+}
+
+.cont-bot-contacto {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.boton-contacto {
+    background-color: $azulprimario;
+    color: $semiblanco;
+    margin-top: 1.2rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: .7rem;
+    text-align: center;
+    width: 100%;
+    border: none;
+    padding: 1rem;
+    @extend %sombra-fuerte;
+
+    &:hover {
+        color: $dorado;
+        transition: all 0.15s linear;
+        @extend %sombra-text-fuerte;
+    }
+}

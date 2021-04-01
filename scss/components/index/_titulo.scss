@@ -1,0 +1,10 @@
+/* Titulo Index */
+
+.titulo-index {
+    transition: all 0.10s linear;
+}
+
+.titulo-index:hover {
+    transform: scale(1.025);
+    color: $azuloscuro;
+}

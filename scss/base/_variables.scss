@@ -1,0 +1,69 @@
+/* Paquetes de variables */
+
+/* Grid Center */
+
+%grid-center {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+%flex-center {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Sombras */
+
+%sombra-muytenue {
+    box-shadow: 
+            0 2px 4px 0 rgba(0,0,0,.16),
+            0 1px 2px 0 rgba(0,0,0,.2),
+            0 .5px 1px 0 rgba(0,0,0,.24);
+}
+
+%sombra-tenue {
+    box-shadow: 
+        0 4px 8px 0 rgba(0,0,0,.2),
+        0 2px 4px 0 rgba(0,0,0,.24),
+        0 1px 2px 0 rgba(0,0,0,.28);
+}
+
+%sombra-normal {
+    box-shadow: 
+            0 2px 4px 0 rgba(0,0,0,.24),
+            0 1px 2px 0 rgba(0,0,0,.28),
+            0 .5px 1px 0 rgba(0,0,0,.32);
+}
+
+%sombra-fuerte {
+    box-shadow: 
+        0 4px 8px 0 rgba(0,0,0,.48),
+        0 2px 4px 0 rgba(0,0,0,.52),
+        0 1px 2px 0 rgba(0,0,0,.56);
+}
+
+%sombra-muyfuerte {
+    box-shadow: 
+        0 4px 8px 0 rgba(0,0,0,.56),
+        0 2px 4px 0 rgba(0,0,0,.60),
+        0 1px 2px 0 rgba(0,0,0,.64);
+}
+
+%sombra-text-normal {
+    text-shadow: 
+            0 2px 4px 0 rgba(0,0,0,.24),
+            0 1px 2px 0 rgba(0,0,0,.28),
+            0 .5px 1px 0 rgba(0,0,0,.32);
+}
+
+%sombra-text-fuerte {
+    text-shadow: 
+            0 2px 4px 0 rgba(0,0,0,.48),
+            0 1px 2px 0 rgba(0,0,0,.52),
+            0 .5px 1px 0 rgba(0,0,0,.56);
+}

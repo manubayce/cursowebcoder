@@ -1,0 +1,13 @@
+/* CSS del Footer */
+
+footer {
+    width: 100%;
+    background-image: radial-gradient(circle at center center, rgba(255,255,255, 0),rgb(1,46,107)),repeating-linear-gradient(405deg, rgb(1,46,107) 0px, rgb(1,46,107) 1px,transparent 1px, transparent 4px),repeating-linear-gradient(315deg, rgb(10,64,101) 0px, rgb(10,64,101) 5px,transparent 5px, transparent 6px),linear-gradient(360deg, rgb(1,46,107),rgb(1,46,107));
+    @extend %flex-center;
+}
+
+.parrafo-footer {
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: $blanco;
+}

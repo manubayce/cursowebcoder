@@ -1,0 +1,26 @@
+/* CSS de Redes Sociales */
+
+.redes-footer {
+    @extend %flex-center;
+}
+
+.mov-red-wapp, .mov-red-fb, .mov-red-ins {
+    transition: all 0.85s linear;
+}
+
+.mov-red-wapp:hover {
+    position: relative;
+    bottom: 0.3rem;
+    right: 0.3rem;
+}
+
+.mov-red-fb:hover {
+    position: relative;
+    bottom: 0.3rem;
+}
+
+.mov-red-ins:hover {
+    position: relative;
+    bottom: 0.3rem;
+    left: 0.3rem;
+}

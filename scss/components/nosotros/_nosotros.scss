@@ -1,0 +1,26 @@
+/* CSS de Nosotros */
+
+.img_nosotros {
+    @extend %flex-center;
+}
+
+.container-nosotros {
+    width: 62.5%;
+
+    @media (max-width: 1440px) {
+        width: 80%;
+    }
+
+    @media (max-width: 1200px) {
+        width: 90%;
+    }
+
+    @media (max-width: 768px) {
+        width: 95%;
+    }
+
+}
+
+.parrafo-nosotros {
+    margin-bottom: 2rem;
+}

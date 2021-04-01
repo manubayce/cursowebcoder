@@ -1,0 +1,82 @@
+/* Productos */
+
+.productos {
+    width: 62.5%;
+    margin: 0 auto;
+    @extend %grid-center;
+} 
+
+@media (min-width: 576px) {
+    .productos {
+        grid-template-columns: auto auto;
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .productos {
+        grid-template-columns: auto auto auto;
+        width: 100%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .productos {
+        grid-template-columns: auto auto auto auto;
+        width: 85%;
+    }
+}
+
+@media (min-width: 1440px) {
+    .productos {
+        grid-template-columns: auto auto auto auto auto;
+    }
+}
+
+.div_productos {
+    @extend %grid-center;
+    grid-template-rows: 1fr 1fr;
+    width: 13rem;
+    height: 19.4rem;
+    margin: .5rem 1rem 1rem 1rem;
+    padding: 0.5rem;
+    border-radius: 0.33rem;
+}
+
+.div_productos:hover {
+    background-color: $grisclaro; 
+    border-color: $azuloscuro;
+    @extend %sombra-normal;
+    border-radius: 0.15rem;
+    transition: all 0.15s linear;
+    transform: scale(1.035);
+}
+
+.textoproductos {
+    margin: auto;
+    padding: auto 0;
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-align: center;
+    align-content: center;
+    transition: all 0.1s linear;
+}
+
+.textoprecio {
+    padding: auto;
+    font-size: 0.9rem;
+    color: $rojo;
+    text-align: center;
+    align-content: center;
+    font-weight: 700;
+}
+
+.textoproductos:hover {
+    color: $azulprimario;
+    text-shadow: 0.1px 0.1px 0.2px $azuloscuro;
+}
+
+.img-cont {
+    border-radius: 0.25rem;
+    @extend %sombra-normal;
+}
