@@ -1,88 +1,86 @@
+
 /* CSS de Navegacion */
 
+    .sticky-nav a {
+        color: $blanco;
+        transition: all 0.15s linear;
 
-.cont-nav-principal {
-    width: 100%;
-    height: 3.48rem;
-    background-image: radial-gradient(circle at center center, rgba(255,255,255, 0),rgb(1,46,107)),repeating-linear-gradient(405deg, rgb(1,46,107) 0px, rgb(1,46,107) 1px,transparent 1px, transparent 4px),repeating-linear-gradient(315deg, rgb(10,64,101) 0px, rgb(10,64,101) 5px,transparent 5px, transparent 6px),linear-gradient(360deg, rgb(1,46,107),rgb(1,46,107));
-}
-
-@media (min-width: 480px) {
-    .cont-nav-principal a , .carro {
-        transform: scale(0.8);
+        &:hover {
+            color: $dorado;
+        }
     }
-}
 
-@media (min-width: 700px) {
-    .cont-nav-principal a , .carro {
-        transform: scale(0.85);
-        padding: 0.15rem;
+    @media (max-width: 1200px) {
+        .sticky-nav .nav-item a {
+            transform: scale(0.95);
+        }
     }
-}
 
-@media (min-width: 800px) and (max-width: 1529px) {
-    .cont-nav-principal a, .carro {
-        transform: scale(0.88);
-        padding: 0.5rem;
+    body {
+         top: 0;
+     }
+
+    .sticky-nav {
+        z-index: 1;
+        position: fixed;
+        width: 100%;
+        opacity: 0.95;
+        top: 0px;
+        padding: 0px;
+        background-image: radial-gradient(circle at center center, rgba(255,255,255, 0),rgb(1,46,107)),repeating-linear-gradient(405deg, rgb(1,46,107) 0px, rgb(1,46,107) 1px,transparent 1px, transparent 4px),repeating-linear-gradient(315deg, rgb(10,64,101) 0px, rgb(10,64,101) 5px,transparent 5px, transparent 6px),linear-gradient(360deg, rgb(1,46,107),rgb(1,46,107));
     }
-}
 
-@media (min-width: 1530px) {
-    .cont-nav-principal a, .carro {
-        transform: scale(1);
+    .dropdown-menu, .dropdown-item {
+        background-image: radial-gradient(circle at center center, rgba(255,255,255, 0),rgb(1,46,107)),repeating-linear-gradient(405deg, rgb(1,46,107) 0px, rgb(1,46,107) 1px,transparent 1px, transparent 4px),repeating-linear-gradient(315deg, rgb(10,64,101) 0px, rgb(10,64,101) 5px,transparent 5px, transparent 6px),linear-gradient(360deg, rgb(1,46,107),rgb(1,46,107));
     }
-}
 
-.cont-nav {
-    width: 70%;
-}
-
-@media (min-width: 650px) and (max-width: 768px) {
-    .cont-nav {
-        width: 85%;
+    .navbar .navbar-brand a {
+        padding: 1rem 0;
+        display: block;
+        text-decoration: none;
     }
-}
 
-@media (min-width: 768px) and (max-width: 1200px) {
-    .cont-nav {
-        width: 80%;
+    .navbar-brand {
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 300;
+        font-size: 1.8rem;
+        color: $blanco;
+        margin-left: 6%;
     }
-}
 
-@media (min-width: 1200px) and (max-width: 1440px) {
-    .cont-nav {
-        width: 75%;
+    .navbar-toggler {
+        border: none;
+        padding: 10px 6px;
+        outline: none;
     }
-}
 
-@media (min-width: 1440px) {
-    .cont-nav {
-        width: 70%;
+    .navbar-toggler span {
+        display: block;
+        width: 22px;
+        height: 2px;
+        border: 1px;
+        background: $blanco;
     }
-}
 
-.cont-nav-principal a {
-    color: $blanco;
-    text-decoration: none;
-    font-weight: 700;
-    margin: auto 1rem;
-    transition: all 0.15s linear;
-}
-
-.cont-nav-principal a:hover {
-    color: $dorado;
-    text-shadow: 0 0 2px $azuloscuro;
-}
-
-.carro {
-    z-index: 1;
-    position: absolute;
-    right: 2%;
-    margin: auto 0;
-}
-
-@media (min-width: 700px) and (max-width: 1200px) {
-    .carro {
-        right: 0;
+    .navbar-toggler span + span {
+        margin-top: 4px;
+        width: 22px;
     }
-}
+
+    .navbar-toggler span + span + span {
+        width: 22px;
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding: 1.2rem 1.2rem;
+        font-size: 1.2rem;
+        position: relative;
+
+        @media (max-width: 1600px) {
+            padding: 1.2rem 1.1rem;
+        }
+
+        @media (max-width: 1200px) {
+            padding: 1.2rem 0.9rem;
+        }
+    }

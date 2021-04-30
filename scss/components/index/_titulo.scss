@@ -4,6 +4,14 @@
     transition: all 0.10s linear;
 }
 
+.prod-nuevos {
+    margin-top: 1.9rem;
+
+    @media (max-width: 753px) {
+        margin-top: 6.1rem;
+    }
+}
+
 .titulo-index:hover {
     transform: scale(1.025);
     color: $azuloscuro;

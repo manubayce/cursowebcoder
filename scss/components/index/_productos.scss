@@ -1,65 +1,84 @@
 /* Productos */
 
 .productos {
-    width: 62.5%;
+    width: 68%;
     margin: 0 auto;
-    @extend %grid-center;
+    display: flex;
+    flex-wrap: wrap;
+
+    @media (max-width: 1600px) {
+        width: 75%;
+    }
+
+    @media (max-width: 1100px) {
+        width: 80%;
+    }
+
+    @media (max-width: 950px) {
+        width: 95%;
+    }
 } 
 
-@media (min-width: 576px) {
-    .productos {
-        grid-template-columns: auto auto;
-        width: 100%;
-    }
-}
-
-@media (min-width: 768px) {
-    .productos {
-        grid-template-columns: auto auto auto;
-        width: 100%;
-    }
-}
-
-@media (min-width: 1200px) {
-    .productos {
-        grid-template-columns: auto auto auto auto;
-        width: 85%;
-    }
-}
-
-@media (min-width: 1440px) {
-    .productos {
-        grid-template-columns: auto auto auto auto auto;
-    }
-}
-
 .div_productos {
-    @extend %grid-center;
-    grid-template-rows: 1fr 1fr;
-    width: 13rem;
-    height: 19.4rem;
-    margin: .5rem 1rem 1rem 1rem;
-    padding: 0.5rem;
-    border-radius: 0.33rem;
+    @extend %flex-center;
+    flex-wrap: row;
+    width: calc(100%/4);
+    padding: 0.8rem;
+
+    @media (max-width: 1600px) {
+        width: calc(100%/3);
+    }
+
+    @media (max-width: 1200px) {
+        width: calc(100%/2);
+        max-width: 350px;
+        margin: 0 auto;
+    }
+
+    @media (max-width: 900px) {
+        width: calc(100%/1);
+        margin-bottom: 1.5rem;
+    }
 }
 
-.div_productos:hover {
-    background-color: $grisclaro; 
-    border-color: $azuloscuro;
-    @extend %sombra-normal;
-    border-radius: 0.15rem;
-    transition: all 0.15s linear;
-    transform: scale(1.035);
+.productos .div_productos span {
+    display: grid;
+    row-gap: 2rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+.productos .div_productos img {
+    width: 100%;
+    vertical-align: middle;
+    transition: all 0.45s ease;
+    margin: 0 0.4rem;
+}
+
+.productos .div_productos:hover img {
+    transform: scale(1.07);
 }
 
 .textoproductos {
-    margin: auto;
-    padding: auto 0;
-    font-size: 0.75rem;
+    margin: 0 1rem;
+    padding: auto 0.5rem;
+    font-size: 0.78rem;
     font-weight: 500;
     text-align: center;
-    align-content: center;
-    transition: all 0.1s linear;
+    transition: all 0.4s ease;
+}
+
+.div_productos:hover {
+
+    .textoproductos {
+        color: $azulprimario;
+        font-size: 0.81rem;
+        text-shadow: 0.05px 0.05px 0.1px $grisoscuro;
+    }
+
+    .textoprecio {
+        font-size: 0.95rem;
+    }
 }
 
 .textoprecio {
@@ -67,16 +86,7 @@
     font-size: 0.9rem;
     color: $rojo;
     text-align: center;
-    align-content: center;
-    font-weight: 700;
-}
-
-.textoproductos:hover {
-    color: $azulprimario;
-    text-shadow: 0.1px 0.1px 0.2px $azuloscuro;
-}
-
-.img-cont {
-    border-radius: 0.25rem;
-    @extend %sombra-normal;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 600;
+    transition: all 0.4s ease;
 }

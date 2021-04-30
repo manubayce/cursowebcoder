@@ -8,13 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&display=swap" rel="stylesheet">
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet"> -->
-
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Arimo:wght@400;500;600&family=Dosis:wght@500;600;700;800&family=Fira+Sans:wght@300;400;500&family=Hind+Siliguri:wght@400;500;600&family=Inter:wght@300;400;500;600&family=Lato:wght@300;400;700&family=Noto+Sans:wght@400;700&family=Nunito+Sans:wght@400;600&family=Oswald:wght@200;300;400;500;600&family=Oxygen:wght@400;700&family=PT+Sans:wght@400;700&family=Questrial&family=Quicksand:wght@400;500;600;700&family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@300;400;500;700&family=Ubuntu:wght@300;400;500&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <meta name="description" content="En Bituy nos especializamos en la venta de Hardware para tu PC, armado de PC, como también contamos con Servicio Técnico.">
 
     <meta name="keywords" content="venta hardware, componentes, equipos armados, support, servicio técnico, tarjeta video, ram, ssd, monitor, placa, asus, 
@@ -31,50 +25,55 @@
 
     <header>
 
-        <section>
-            <nav class="navbar navbar-expand-lg d-flex fixed-top cont-nav-principal">
-                <div class="container cont-nav">
-                  <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
+        <div id="nav" class="sticky-nav">
+
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">Bituy</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    <span></span>
+                    <span></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto">
                       <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="Index.html">Bituy</a>
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
                       </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Categorías
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">Equipos AMD</a></li>
+                          <li><a class="dropdown-item" href="#">Equipos Intel</a></li>
+                        </ul>
+                      </li>
+
                       <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="">Categorias</a>
+                        <a class="nav-link active" aria-current="page" href="nosotros.html">Nosotros</a>
                       </li>
+
                       <li class="nav-item">
-                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                        <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
                       </li>
+
                       <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">Contacto</a>
+                        <a class="nav-link active" aria-current="page" href="preguntas_frecuentes.html">Preguntas Frecuentes</a>
                       </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="preguntas_frecuentes.html">Preguntas Frecuentes</a>
-                      </li>
+
                     </ul>
                   </div>
                 </div>
-                <div class="carro d-none d-md-block d-lg-block d-xl-block d-xxl-block">
-                    <a href="" alt = "Carro de Compras">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="45" height="45" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                            <circle cx="6" cy="19" r="2" />
-                            <circle cx="17" cy="19" r="2" />
-                            <path d="M17 17h-11v-14h-2" />
-                            <path d="M6 5l14 1l-1 7h-13" />
-                        </svg>
-                    </a>
-                </div>
-            </nav>
-            
-        </section>
+              </nav>
+        </div>
     
     </header>
 
     <main>
 
         <div>
-            <h1 class="titulo-index">Preguntas Frecuentes</h1>
+            <h1 class="titulo-secciones">Preguntas Frecuentes</h1>
         </div>
 
         <div class="cont-hr"><hr class="hr-preg"></div>
@@ -203,5 +202,9 @@
 
             </section>
         </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+        <script src="navbar.js"></script>
+
 </body>
 </html>

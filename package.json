@@ -7,5 +7,13 @@
   },
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manubayce/cursowebcoder.git"
+  },
+  "bugs": {
+    "url": "https://github.com/manubayce/cursowebcoder/issues"
+  },
+  "homepage": "https://github.com/manubayce/cursowebcoder#readme",
   "description": ""
 }

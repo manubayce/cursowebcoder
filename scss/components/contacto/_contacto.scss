@@ -2,13 +2,14 @@
 
 .cont-contacto {
     width: 100%;
+    margin-top: 1.9rem;
 }
 
 .formulario {
     background-image: repeating-linear-gradient(67.5deg, rgba(249,248,248, 0.2) 0px, rgba(249,248,248, 0.2) 0px,transparent 0px, transparent 1px,rgba(249,248,248, 0.2) 1px, rgba(249,248,248, 0.2) 4px,transparent 4px, transparent 5px,rgba(249,248,248, 0.2) 5px, rgba(249,248,248, 0.2) 8px),repeating-linear-gradient(0deg, rgba(249,248,248, 0.2) 0px, rgba(249,248,248, 0.2) 0px,transparent 0px, transparent 1px,rgba(249,248,248, 0.2) 1px, rgba(249,248,248, 0.2) 4px,transparent 4px, transparent 5px,rgba(249,248,248, 0.2) 5px, rgba(249,248,248, 0.2) 8px),linear-gradient(135deg, rgb(215,219,221),rgb(215,219,221));
     margin: 0 16% 2rem 16%;
     padding: 1.5rem;
-    border-radius: 1rem;
+    border-radius: 0.2rem;
     @extend %sombra-normal;
 
         @media (max-width: 1200px) {
@@ -66,7 +67,7 @@
    width: 100%;
    border: none;
    padding: 1.5rem;
-   border-radius: .5rem;
+   border-radius: .35rem;
    @extend %sombra-muytenue;
 }
 
@@ -79,23 +80,25 @@
     height: 20rem;
     border: none;
     padding: 1.5rem;
-    border-radius: .5rem;
+    border-radius: .35rem;
     @extend %sombra-muytenue;
 }
 
 .cont-bot-contacto {
-    width: 40%;
+    width: 25%;
     margin: 0 auto;
 }
 
 .boton-contacto {
-    background-color: $azulprimario;
+    background-image: radial-gradient(circle at center center, rgba(255,255,255, 0),rgb(1,46,107)),repeating-linear-gradient(405deg, rgb(1,46,107) 0px, rgb(1,46,107) 1px,transparent 1px, transparent 4px),repeating-linear-gradient(315deg, rgb(10,64,101) 0px, rgb(10,64,101) 5px,transparent 5px, transparent 6px),linear-gradient(360deg, rgb(1,46,107),rgb(1,46,107));
+    // background-color: $azuloscuro;
+    opacity: 0.9;
     color: $semiblanco;
     margin-top: 1.2rem;
     font-size: 1.5rem;
     text-decoration: none;
     font-weight: bold;
-    border-radius: .7rem;
+    border-radius: .5rem;
     text-align: center;
     width: 100%;
     border: none;

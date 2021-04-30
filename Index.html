@@ -4,18 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&display=swap" rel="stylesheet">
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet"> -->
-
-    <meta name="description" content="En Bituy nos especializamos en la venta de Hardware para tu PC, armado de PC, como también contamos con Servicio Técnico.">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Arimo:wght@400;500;600&family=Dosis:wght@500;600;700;800&family=Fira+Sans:wght@300;400;500&family=Hind+Siliguri:wght@400;500;600&family=Inter:wght@300;400;500;600&family=Lato:wght@300;400;700&family=Noto+Sans:wght@400;700&family=Nunito+Sans:wght@400;600&family=Oswald:wght@200;300;400;500;600&family=Oxygen:wght@400;700&family=PT+Sans:wght@400;700&family=Questrial&family=Quicksand:wght@400;500;600;700&family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@300;400;500;700&family=Ubuntu:wght@300;400;500&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">    <meta name="description" content="En Bituy nos especializamos en la venta de Hardware para tu PC, armado de PC, como también contamos con Servicio Técnico.">
 
     <meta name="keywords" content="venta hardware, componentes, equipos armados, support, servicio técnico, tarjeta video, ram, ssd, monitor, placa, asus, 
                 logitech, evga, lenovo, thermaltake, tp link, disco, western digital, corsair, notebook, tablet, PS5">   
@@ -31,61 +25,84 @@
 
     <header>
 
-        <section>
-            <nav class="navbar navbar-expand-lg d-flex fixed-top cont-nav-principal">
-                <div class="container cont-nav">
-                  <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
+        <div id="nav" class="sticky-nav">
+
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">Bituy</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    <span></span>
+                    <span></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto">
                       <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="Index.html">Bituy</a>
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
                       </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Categorías
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">Equipos AMD</a></li>
+                          <li><a class="dropdown-item" href="#">Equipos Intel</a></li>
+                        </ul>
+                      </li>
+
                       <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="">Categorias</a>
+                        <a class="nav-link active" aria-current="page" href="nosotros.html">Nosotros</a>
                       </li>
+
                       <li class="nav-item">
-                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                        <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
                       </li>
+
                       <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">Contacto</a>
+                        <a class="nav-link active" aria-current="page" href="preguntas_frecuentes.html">Preguntas Frecuentes</a>
                       </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="preguntas_frecuentes.html">Preguntas Frecuentes</a>
-                      </li>
+
                     </ul>
                   </div>
                 </div>
-                <div class="carro d-none d-md-block d-lg-block d-xl-block d-xxl-block">
-                    <a href="" alt = "Carro de Compras">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="45" height="45" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                            <circle cx="6" cy="19" r="2" />
-                            <circle cx="17" cy="19" r="2" />
-                            <path d="M17 17h-11v-14h-2" />
-                            <path d="M6 5l14 1l-1 7h-13" />
-                        </svg>
-                    </a>
-                </div>
-            </nav>
-            
-        </section>
+              </nav>
+        </div>
     
     </header>
 
     <main>
 
-        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleInterval" class="carousel slide slider" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active" data-bs-interval="4000">
-                <img src="Imagenes/rx-6800-16g-1920.jpg" class="d-block w-100" alt="Rx 6800 16GB">
+                <img src="Imagenes/viewsonic-xg240r-1920.jpg" class="d-block w-100" alt="Monitor Viewsonic xg240 FullHD">
+              </div>
+              <div class="carousel-item active" data-bs-interval="4000">
+                <img src="Imagenes/radeon-rx670-xt-mech-1920.jpg" class="d-block w-100" alt="Radeon Rx670 12GB">
+              </div>
+              <div class="carousel-item active" data-bs-interval="4000">
+                <img src="Imagenes/legion-1920-final.jpg" class="d-block w-100" alt="Lenovo Legion i5-10400f 16GB gtx-1660 6GB">
               </div>
               <div class="carousel-item" data-bs-interval="4000">
-                <img src="Imagenes/rog-delta-white-1920.jpg" class="d-block w-100" alt="Auricular Asus Rog Delta White">
+                <img src="Imagenes/tt-pulse-g100-1920.jpg" class="d-block w-100" alt="Auricular Thermaltake Pulse g100">
               </div>
               <div class="carousel-item" data-bs-interval="4000">
-                <img src="Imagenes/1920-corsair-k70-rgb.jpg" class="d-block w-100 " alt="Teclado Corsair k70">
+                <img src="Imagenes/hx-alloy-origins-60-1920.jpg" class="d-block w-100 " alt="Teclado Hyperx Alloy Origins">
+              </div>
+              <div class="carousel-item" data-bs-interval="4000">
+                <img src="Imagenes/msi-monitors-1920.jpg" class="d-block w-100 " alt="Monitor MSI Optix Gaming">
+              </div>
+              <div class="carousel-item" data-bs-interval="4000">
+                <img src="Imagenes/rog-strix-b550-i-gaming-1920.jpg" class="d-block w-100 " alt="Motherboard Rog Strix b550-i">
               </div>
               <div class="carousel-item" data-bs-interval="4000">
                 <img src="Imagenes/logitech-nuevo-1920.jpg" class="d-block w-100 " alt="Nueva gama LOGITECH">
+              </div>
+              <div class="carousel-item" data-bs-interval="4000">
+                <img src="Imagenes/asus-rog-strix-flare-1920.jpg" class="d-block w-100 " alt="Teclado Asus Rog Strix Flare">
+              </div>
+              <div class="carousel-item" data-bs-interval="4000">
+                <img src="Imagenes/cooling-paste-1920.jpg" class="d-block w-100 " alt="Pasta Térmica">
               </div>
               <div class="carousel-item" data-bs-interval="4000">
                 <img src="Imagenes/pplay-full-1920.jpg" class="d-block w-100" alt="Mouse Powerplay LOGITECH">
@@ -105,46 +122,49 @@
           </div>
 
         <div>
-            <h1 class="titulo-index">Productos Nuevos</h1>
+            <h1 class="titulo-index prod-nuevos">Productos Nuevos</h1>
         </div>
 
-            <div class="cont-hr"><hr class="hr-index"></div>
-            <br>
+        <div class="cont-hr"><hr class="hr-index"></div>
+        <br>
 
-        <section class="productos">
+            <section class="productos">
 
-            <div class="div_productos">
-                <div><img class="img-cont" src="Imagenes/Productosdos/img2.jpg" alt="Monitos Asus Rog Strix 43"></div>
-                <div class="textoproductos">ASUS MONITOR ROG STRIX XG438Q 43"</div>
-                <div class="textoprecio">USD 1649,00</div>
-            </div>
-            
-            <div class="div_productos">
-                <img class="img-cont" src="Imagenes/Productosdos/img17.jpg" alt="Notebook Dell i5-8250u 8GB 256 SSD">
-                <div class="textoproductos">DELL NOTEBOOK 7490 I5-8250U 8G 256CG SSD 14" W10 PRO</div>
-                <div class="textoprecio">USD 1161,00</div>
-            </div>
-
-            <div class="div_productos">
-                <img class="img-cont" src="Imagenes/Productosdos/img6.jpg" alt="Tablet Huion Kamvas 22">
-                <div class="textoproductos">HUION TABLET KAMVAS 22 (2020)</div>
-                <div class="textoprecio">USD 855,00</div>
-            </div>
-
-            <div class="div_productos">
-                <img class="img-cont" src="Imagenes/Productosdos/img8.jpg" alt="Teclado Logikeyboard Premiere Pro">
-                <div class="textoproductos">LOGICKEYBOARD TECLADO ASTRA SERIE ADOBE PREMIERE PRO</div>
-                <div class="textoprecio">USD 225,00</div>
+                <div class="div_productos">
+                    <span><img class="img-cont img-fluid" src="Imagenes/Productosdos/1.jpg" alt="Monitos Asus Rog Strix 43">
+                          <div class="textoproductos">ASUS MONITOR ROG STRIX XG438Q 43"</div>
+                          <div class="textoprecio">USD 1649,00</div>
+                    </span>
                 </div>
-            </div>
 
-            <div class="div_productos">
-                <img class="img-cont" src="Imagenes/Productosdos/img12.jpg" alt="Placa Asus Rog Strix z490-e gaming">
-                <div class="textoproductos">ASUS PLACA ROG STRIX Z490-E GAMING</div>
-                <div class="textoprecio">USD 459,00</div>
-            </div>
+                <div class="div_productos">
+                  <span><img class="img-cont img-fluid" src="Imagenes/Productosdos/2.jpg" alt="Notebook Dell i5-8250u 8GB 256 SSD">
+                        <div class="textoproductos">DELL NOTEBOOK 7490 I5-8250U 8G 256CG SSD 14" W10 PRO</div>
+                        <div class="textoprecio">USD 1161,00</div>
+                  </span>
+                </div>
 
-        </section>
+                <div class="div_productos">
+                  <span><img class="img-cont img-fluid" src="Imagenes/Productosdos/3.jpg" alt="Tablet Huion Kamvas 22">
+                        <div class="textoproductos">HUION TABLET KAMVAS 22 (2020)</div>
+                        <div class="textoprecio">USD 855,00</div>
+                  </span>
+                </div>
+
+                <div class="div_productos">
+                  <span><img class="img-cont img-fluid" src="Imagenes/Productosdos/4.jpg" alt="Teclado Logikeyboard Premiere Pro">
+                        <div class="textoproductos">LOGICKEYBOARD TECLADO ASTRA SERIE ADOBE PREMIERE PRO</div>
+                        <div class="textoprecio">USD 225,00</div>
+                  </span>
+                </div>
+
+                <div class="div_productos">
+                  <span><img class="img-cont img-fluid" src="Imagenes/Productosdos/5.jpg" alt="Placa Asus Rog Strix z490-e gaming">
+                        <div class="textoproductos">ASUS PLACA ROG STRIX Z490-E GAMING</div>
+                        <div class="textoprecio">USD 459,00</div>
+                  </span>
+                </div>
+            </section>           
 
         <br>
 
@@ -280,8 +300,8 @@
         </section>
     </footer>
     
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>    <script src="navbar.js"></script>
 
 </body>
 </html>

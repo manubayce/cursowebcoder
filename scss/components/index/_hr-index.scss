@@ -1,34 +1,38 @@
 /* Hr Index */
 
 .hr-index {
-    width: 70%;
+    width: 68%;
     border: 0;
-    height: 0.9px;
-    opacity: 0.2;
+    height: 0.7px;
+    opacity: 0.08;
     color: $oscuro;
-    box-shadow: 1.5px 1.5px 1.5px $oscuro;
-}
+    box-shadow: 1.2px 1.2px 1.2px $oscuro;
 
-@media (min-width: 650px) and (max-width: 768px) {
-    .hr-index {
-        width: 85%;
+    @media (max-width: 1600px) {
+        width: 75%;
     }
-}
 
-@media (min-width: 768px) and (max-width: 1200px) {
-    .hr-index {
-        width: 80%;
-    }
-}
-
-@media (min-width: 1200px) and (max-width: 1440px) {
-    .hr-index {
-        width: 85%;
-    }
-}
-
-@media (min-width: 1440px) {
-    .hr-index {
+    @media (max-width: 1200px) {
         width: 70%;
+    }
+
+    @media (max-width: 1100px) {
+        width: 75%;
+    }
+
+    @media (max-width: 950px) {
+        width: 87.5%;
+    }
+
+    @media (max-width: 753px) {
+        width: 60%;
+    }
+
+    @media (max-width: 600px) {
+        width: 70%;
+    }
+
+    @media (max-width: 500px) {
+        width: 80%;
     }
 }

@@ -4,9 +4,10 @@
 
 %grid-center {
     display: grid;
+    align-items: center;
     align-content: center;
     justify-content: center;
-    align-items: center;
+
 }
 
 %flex-center {
