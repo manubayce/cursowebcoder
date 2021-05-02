@@ -238,11 +238,11 @@ body {
   transition: all 0.1s linear;
 }
 
-.prod-nuevos {
+.primer-titulo {
   margin-top: 1.9rem;
 }
 @media (max-width: 753px) {
-  .prod-nuevos {
+  .primer-titulo {
     margin-top: 6.1rem;
   }
 }
@@ -324,6 +324,7 @@ body {
   flex-wrap: row;
   width: calc(100%/4);
   padding: 0.8rem;
+  margin-bottom: 1.5rem;
 }
 @media (max-width: 1600px) {
   .div_productos {
@@ -345,10 +346,10 @@ body {
 }
 
 .productos .div_productos span {
-  display: grid;
-  row-gap: 2rem;
   width: 100%;
   overflow: hidden;
+  display: grid;
+  row-gap: 1.85rem;
 }
 
 .productos .div_productos img {
@@ -359,12 +360,11 @@ body {
 }
 
 .productos .div_productos:hover img {
-  transform: scale(1.07);
+  transform: scale(1.05);
 }
 
 .textoproductos {
-  margin: 0 1rem;
-  padding: auto 0.5rem;
+  margin: 0 1.5rem;
   font-size: 0.78rem;
   font-weight: 500;
   text-align: center;
