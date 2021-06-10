@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="form.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -29,7 +30,7 @@
 
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
-                  <a class="navbar-brand" href="#">Bituy</a>
+                  <a class="navbar-brand" href="index.html">Bituy</a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                     <span></span>
@@ -45,11 +46,11 @@
                           Categorías
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Monitores</a></li>
-                            <li><a class="dropdown-item" href="#">Componentes & PC armada</a></li>
-                            <li><a class="dropdown-item" href="#">Notebooks & Tablets</a></li>
-                            <li><a class="dropdown-item" href="#">Perifericos</a></li>
-                            <li><a class="dropdown-item" href="#">Otros</a></li>
+                          <li><a class="dropdown-item" href="monitores.html">Monitores</a></li>
+                          <li><a class="dropdown-item" href="componentes.html">Componentes & PC armados</a></li>
+                          <li><a class="dropdown-item" href="portables.html">Notebooks & Tablets</a></li>
+                          <li><a class="dropdown-item" href="perifericos.html">Perifericos</a></li>
+                          <li><a class="dropdown-item" href="otros.html">Otros</a></li>
                         </ul>
                       </li>
 
@@ -80,28 +81,28 @@
         </div>
 
         <section class="cont-contacto">
-            <form class="formulario">
+            <form class="formulario" id="form">
                 <legend>A efectos de contactarse con nuestra empresa, rellene el siguiente formulario y en breves le responderemos su consulta:</legend>
                 <fieldset>
 
                         <div class="campo">
                             <label>Nombre</label>
-                            <input class="form-input" type="text" placeholder="Nombre">
+                            <input class="form-input" type="text" id="nombre" placeholder="Nombre">
                         </div>
 
                         <div class="campo">
                             <label>Apellido</label>
-                            <input class="form-input" type="text" placeholder="Apellido">
+                            <input class="form-input" type="text" id="apellido" placeholder="Apellido">
                         </div>
 
                         <div class="campo">
                             <label>Teléfono</label>
-                            <input class="form-input" type="number" placeholder="Teléfono">
+                            <input class="form-input" type="number" id="telefono" placeholder="Teléfono">
                         </div>
 
                         <div class="campo">
                             <label>Correo</label>
-                            <input class="form-input" type="text" placeholder="Mail">
+                            <input class="form-input" type="text" id="email" placeholder="Mail">
                         </div>
 
                         <div class="campo">
@@ -112,7 +113,7 @@
                 </fieldset>
 
                 <div class="campo cont-bot-contacto">
-                    <input class="boton-contacto" type="submit" value="Enviar">
+                    <input class="boton-contacto btn btn-primary" type="submit" value="Enviar">
                 </div>
 
             </form>
