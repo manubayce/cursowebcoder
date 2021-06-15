@@ -1,8 +1,8 @@
+let form = document.getElementById("form")
 let nombre = document.getElementById("nombre")
 let apellido = document.getElementById("apellido")
 let telefono = document.getElementById("telefono")
 let email = document.getElementById("email")
-let form = document.getElementById("form")
 
 form.addEventListener("submit", e=>{
     e.preventDefault()
@@ -13,22 +13,31 @@ form.addEventListener("submit", e=>{
 
 // Objeto
 
-let personaForm = {
-    Nombre = nombre,
-    Apellido = apellido,
-    Telefono = telefono,
-    Email = email,
-}
+let personaForm = {    
+
+    Nombre = nombre.value,    
+    
+    Apellido = apellido.value,    
+    
+    Telefono = telefono.value,    
+    
+    Email = email.value
+    
+    }
 
 console.log(personaForm);
 
-// Objeto 2
+// Array
 
-let objeto2 = {
-    Nombre = "Manuel",
-    Apellido = "Bayce",
-    Telefono = "75889",
-    Email = "fdsfdsf@SpeechGrammarList.com",
-}
+let personasFormulario = [
+    {nombre: "manuel", apellido: "bayce", telefono: 456980, email: "manuelbayce@gmail.com"},
+    {nombre: "Eduardo", apellido: "lopez", telefono: 693012, email: "eduardolopez@gmail.com"},
+    {nombre: "sofía", apellido: "Alvarez", telefono: 421367, email: "sofiaalvarez@gmail.com"},
+    {nombre: "mariana", apellido: "Gutierrez", telefono: 124368, email: "marianaalvarez@gmail.com"},
+]
 
-console.log(objeto2);
+let nombreMayus = personasFormulario.map(nombre => nombre.toUpperCase())
+let apellidoMayus = personasFormulario.map(apellido => apellido.toUpperCase())
+
+console.log(nombreMayus);
+console.log(apellidoMayus);
