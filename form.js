@@ -1,8 +1,8 @@
-let form = document.getElementById("form")
-let nombre = document.getElementById("nombre")
-let apellido = document.getElementById("apellido")
-let telefono = document.getElementById("telefono")
-let email = document.getElementById("email")
+let form = document.getElementById("form");
+let nombre = document.getElementById("nombre");
+let apellido = document.getElementById("apellido");
+let telefono = document.getElementById("telefono");
+let email = document.getElementById("email");
 
 form.addEventListener("submit", e=>{
     e.preventDefault()
@@ -15,13 +15,13 @@ form.addEventListener("submit", e=>{
 
 let personaForm = {    
 
-    Nombre = nombre.value,    
+    Nombre = nombre,    
     
-    Apellido = apellido.value,    
+    Apellido = apellido,    
     
-    Telefono = telefono.value,    
+    Telefono = telefono,    
     
-    Email = email.value
+    Email = email
     
     }
 
