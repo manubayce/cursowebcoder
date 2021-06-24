@@ -6,8 +6,30 @@ let email = document.getElementById("email");
 
 form.addEventListener("submit", e=>{
     e.preventDefault()
-    if(nombre.value.length <3 || apellido.value.length <3 || telefono.value.length <7 || email.value.length <10){
-        alert("Alguno de los valores ingresados es demasiado corto.")
+    let mailvalidation = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
+    let enviar = false
+    if(nombre.value.length <3)
+    {
+        alert("El valor ingresado del nombre es demasiado corto.")
+        enviar = true
+    }
+
+    if(apellido.value.length <3 && enviar == false)
+    {
+        alert("El valor ingresado del apellido es demasiado corto.")
+        enviar = true
+    }
+
+    if(telefono.value.length <7 && enviar == false)
+    {
+        alert("El valor ingresado del teléfono es demasiado corto.")
+        enviar = true
+    }
+
+    if(!mailvalidation.test(email.value) && enviar == false) 
+    {
+        alert("El email ingresado no es válido.")
+        enviar = true
     }
 })
 
