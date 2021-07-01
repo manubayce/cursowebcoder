@@ -572,6 +572,12 @@ body {
   border: none;
   padding: 1.5rem;
   border-radius: 0.35rem;
+  border: 3px solid transparent;
+  transition: 0.3s ease all;
+}
+
+.formulario__input:focus {
+  outline: none;
 }
 
 .campo:nth-child(5) {
@@ -626,6 +632,78 @@ body {
     font-size: 1.2rem;
     padding: 0.7rem;
   }
+}
+
+/* CSS para el JS de Contacto */
+.formulario__label {
+  display: block;
+  font-weight: 700;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.formulario__grupo-input {
+  position: relative;
+}
+
+.formulario__input-error {
+  font-size: 12px;
+  margin-bottom: 0;
+  display: none;
+}
+
+.formulario__input-error-activo {
+  display: block;
+}
+
+.formulario__mensaje-exito {
+  font-size: 14px;
+  color: #119200;
+  display: none;
+}
+
+.formulario__mensaje-exito-activo {
+  display: block;
+}
+
+.formulario__mensaje {
+  height: 45px;
+  line-height: 45px;
+  background: #F66060;
+  padding: 0 15px;
+  border-radius: 3px;
+  display: none;
+}
+
+.formulario__mensaje div {
+  margin: 0;
+}
+
+.formulario__mensaje-activo {
+  display: block;
+}
+
+.formulario__mensaje {
+  grid-column: span 2;
+}
+
+/*  CSS exclusivo para Validacion */
+.formulario__grupo-correcto .formulario__validacion-estado {
+  color: #1ed12d;
+  opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__label {
+  color: #CB4335;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+  color: #CB4335;
+  opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input {
+  border: 3px solid #CB4335;
 }
 
 /* CSS del Footer */

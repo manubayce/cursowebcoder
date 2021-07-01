@@ -85,28 +85,56 @@
                 <fieldset>
 
                         <div class="campo">
-                            <label for="nombre">Nombre</label>
-                            <input class="form-input" type="text" id='nombre' placeholder="Nombre">
+                            <label class="formulario__label" for="nombre">Nombre</label>
+                            <div class="formulario__grupo-input">
+                                <input class="form-input type="text" name='nombre' id='grupo__nombre' placeholder="Miguel">
+                                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                            </div>
+                            <div class="formulario__input-error">
+                                El nombre tiene que ser de 2 a 25 dígitos y puede contener espacios y acentos.
+                            </div>
                         </div>
 
                         <div class="campo">
-                            <label for="apellido">Apellido</label>
-                            <input class="form-input" type="text" id='apellido' placeholder="Apellido">
+                            <label class="formulario__label" for="apellido">Apellido</label>
+                            <div class="formulario__grupo-input">
+                                <input class="form-input" type="text" name='apellido' id='grupo__apellido' placeholder="Fernandez">
+                                <i class="formulario__validacion-estado fas fa-times-circle"></i>    
+                            </div>
+                            <div class="formulario__input-error">
+                                El apellido tiene que ser de 2 a 20 dígitos y puede contener espacios y acentos.
+                            </div>
                         </div>
 
                         <div class="campo">
-                            <label for="telefono">Teléfono</label>
-                            <input class="form-input" type="number" id='telefono' placeholder="Teléfono">
+                            <label class="formulario__label" for="telefono">Teléfono</label>
+                            <div class="formulario__grupo-input">
+                                <input class="form-input" type="number" name='telefono' id='grupo__telefono' placeholder="094630108">
+                                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                            </div>
+                            <div class="formulario__input-error">
+                                El teléfono tiene que contener de 7 a 14 dígitos.
+                            </div>
                         </div>
 
                         <div class="campo">
-                            <label for="email">Correo</label>
-                            <input class="form-input" type="text" id='email' placeholder="Mail">
+                            <label class="formulario__label" for="email">Correo</label>
+                            <div class="formulario__grupo-input">
+                                <input class="form-input" type="text" name='email' id='grupo__correo' placeholder="miguel@gmail.com">
+                                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                            </div>
+                            <div class="formulario__input-error">
+                                El correo ingresado no es válido, intente con el formato 'correo@email.com'.
+                            </div>
                         </div>
 
                         <div class="campo">
                             <label>Mensaje</label>
                             <textarea></textarea>
+                        </div>
+
+                        <div class="formulario__mensaje" id="formulario__mensaje">
+                            <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
                         </div>
 
                 </fieldset>
@@ -179,6 +207,7 @@
         
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
         <script src="js/form.js"></script>
+        <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 
 </body>
 </html> 
